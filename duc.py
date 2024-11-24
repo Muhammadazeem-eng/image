@@ -1,12 +1,9 @@
-import os
 import base64
 import streamlit as st
-from dotenv import load_dotenv
 from openai import OpenAI
 from langchain_community.tools import DuckDuckGoSearchResults  # Import for web search
 
-# Load environment variables from .env file
-load_dotenv()
+
 
 api_key = st.secrets["general"]["OPENAI_API_KEY"]
 
