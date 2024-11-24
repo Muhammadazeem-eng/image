@@ -12,7 +12,7 @@ load_dotenv()
 api_key = st.secrets["general"]["OPENAI_API_KEY"]
 
 # Initialize OpenAI client
-client = OpenAI()
+client = OpenAI(api_key=api_key)
 
 
 # Function to encode the image
